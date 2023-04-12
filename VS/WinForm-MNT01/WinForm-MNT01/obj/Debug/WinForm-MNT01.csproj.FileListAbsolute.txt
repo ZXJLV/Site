@@ -1,0 +1,13 @@
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\bin\Debug\WinForm-MNT01.exe.config
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\bin\Debug\WinForm-MNT01.exe
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\bin\Debug\WinForm-MNT01.pdb
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\obj\Debug\WinForm-MNT01.csproj.AssemblyReference.cache
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\obj\Debug\WinForm-MNT01.csproj.SuggestedBindingRedirects.cache
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\obj\Debug\WinForm_MNT01.MainForm.resources
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\obj\Debug\WinForm_MNT01.Properties.Resources.resources
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\obj\Debug\WinForm-MNT01.csproj.GenerateResource.cache
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\obj\Debug\WinForm-MNT01.csproj.CoreCompileInputs.cache
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\obj\Debug\WinForm-MNT01.exe
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\obj\Debug\WinForm-MNT01.pdb
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\obj\Debug\WinForm_MNT01.ChaXunYuDing.resources
+F:\ZhanDian\VS\WinForm-MNT01\WinForm-MNT01\obj\Debug\WinForm_MNT01.textXingMing.resources

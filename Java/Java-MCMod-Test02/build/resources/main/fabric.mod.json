@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "Java-MCMod-Test02",
+  "version": "1.0-SNAPSHOT",
+  "name": "Java-MCMod-Test02",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/27142/Java-MCMod-Test02"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/Java-MCMod-Test02/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.test01.javamcmodtest02.client.Java_MCMod_Test02Client"
+    ],
+    "main": [
+      "org.test01.javamcmodtest02.Java_MCMod_Test02"
+    ]
+  },
+  "mixins": [
+    "Java-MCMod-Test02.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric": "*",
+    "minecraft": "1.19.1"
+  }
+}

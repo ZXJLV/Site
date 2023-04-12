@@ -1,0 +1,24 @@
+c:\users\administrator\documents\visual studio 2012\Projects\WFA1\WFA1\bin\Debug\WFA1.exe.config
+c:\users\administrator\documents\visual studio 2012\Projects\WFA1\WFA1\bin\Debug\WFA1.exe
+c:\users\administrator\documents\visual studio 2012\Projects\WFA1\WFA1\bin\Debug\WFA1.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\WFA1\WFA1\obj\Debug\空气质量监测管理系统.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2012\Projects\WFA1\WFA1\obj\Debug\WFA1.frmMain.resources
+c:\users\administrator\documents\visual studio 2012\Projects\WFA1\WFA1\obj\Debug\WFA1.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2012\Projects\WFA1\WFA1\obj\Debug\空气质量监测管理系统.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2012\Projects\WFA1\WFA1\obj\Debug\WFA1.exe
+c:\users\administrator\documents\visual studio 2012\Projects\WFA1\WFA1\obj\Debug\WFA1.pdb
+c:\Users\administrator\documents\visual studio 2012\Projects\WFA1\WFA1\obj\Debug\WFA1.luRu.resources
+c:\Users\administrator\documents\visual studio 2012\Projects\WFA1\WFA1\obj\Debug\WFA1.chaXun.resources
+F:\ZhanDian\VS\WFA1\WFA1\bin\Debug\WFA1.exe.config
+F:\ZhanDian\VS\WFA1\WFA1\bin\Debug\WFA1.exe
+F:\ZhanDian\VS\WFA1\WFA1\bin\Debug\WFA1.pdb
+F:\ZhanDian\VS\WFA1\WFA1\obj\Debug\空气质量监测管理系统.csproj.AssemblyReference.cache
+F:\ZhanDian\VS\WFA1\WFA1\obj\Debug\空气质量监测管理系统.csproj.SuggestedBindingRedirects.cache
+F:\ZhanDian\VS\WFA1\WFA1\obj\Debug\WFA1.luRu.resources
+F:\ZhanDian\VS\WFA1\WFA1\obj\Debug\WFA1.chaXun.resources
+F:\ZhanDian\VS\WFA1\WFA1\obj\Debug\WFA1.frmMain.resources
+F:\ZhanDian\VS\WFA1\WFA1\obj\Debug\WFA1.Properties.Resources.resources
+F:\ZhanDian\VS\WFA1\WFA1\obj\Debug\空气质量监测管理系统.csproj.GenerateResource.cache
+F:\ZhanDian\VS\WFA1\WFA1\obj\Debug\空气质量监测管理系统.csproj.CoreCompileInputs.cache
+F:\ZhanDian\VS\WFA1\WFA1\obj\Debug\WFA1.exe
+F:\ZhanDian\VS\WFA1\WFA1\obj\Debug\WFA1.pdb

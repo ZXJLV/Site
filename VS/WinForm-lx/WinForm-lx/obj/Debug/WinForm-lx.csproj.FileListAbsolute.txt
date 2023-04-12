@@ -1,0 +1,13 @@
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\bin\Debug\WinForm-lx.exe.config
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\bin\Debug\WinForm-lx.exe
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\bin\Debug\WinForm-lx.pdb
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\obj\Debug\WinForm-lx.csproj.AssemblyReference.cache
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\obj\Debug\WinForm-lx.csproj.SuggestedBindingRedirects.cache
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\obj\Debug\WinForm_lx.MainForm.resources
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\obj\Debug\WinForm_lx.Properties.Resources.resources
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\obj\Debug\WinForm-lx.csproj.GenerateResource.cache
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\obj\Debug\WinForm-lx.csproj.CoreCompileInputs.cache
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\obj\Debug\WinForm-lx.exe
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\obj\Debug\WinForm-lx.pdb
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\obj\Debug\WinForm_lx.YuDingHuiYi.resources
+F:\ZhanDian\VS\WinForm-lx\WinForm-lx\obj\Debug\WinForm_lx.ChaXunYuDing.resources

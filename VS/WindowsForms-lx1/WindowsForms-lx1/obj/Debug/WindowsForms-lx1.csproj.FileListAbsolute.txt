@@ -1,0 +1,11 @@
+F:\ZhanDian\VS\WindowsForms-lx1\WindowsForms-lx1\bin\Debug\WindowsForms-lx1.exe.config
+F:\ZhanDian\VS\WindowsForms-lx1\WindowsForms-lx1\bin\Debug\WindowsForms-lx1.exe
+F:\ZhanDian\VS\WindowsForms-lx1\WindowsForms-lx1\bin\Debug\WindowsForms-lx1.pdb
+F:\ZhanDian\VS\WindowsForms-lx1\WindowsForms-lx1\obj\Debug\WindowsForms-lx1.csproj.AssemblyReference.cache
+F:\ZhanDian\VS\WindowsForms-lx1\WindowsForms-lx1\obj\Debug\WindowsForms-lx1.csproj.SuggestedBindingRedirects.cache
+F:\ZhanDian\VS\WindowsForms-lx1\WindowsForms-lx1\obj\Debug\WindowsForms_lx1.ChaoShiHuiYuan.resources
+F:\ZhanDian\VS\WindowsForms-lx1\WindowsForms-lx1\obj\Debug\WindowsForms_lx1.Properties.Resources.resources
+F:\ZhanDian\VS\WindowsForms-lx1\WindowsForms-lx1\obj\Debug\WindowsForms-lx1.csproj.GenerateResource.cache
+F:\ZhanDian\VS\WindowsForms-lx1\WindowsForms-lx1\obj\Debug\WindowsForms-lx1.csproj.CoreCompileInputs.cache
+F:\ZhanDian\VS\WindowsForms-lx1\WindowsForms-lx1\obj\Debug\WindowsForms-lx1.exe
+F:\ZhanDian\VS\WindowsForms-lx1\WindowsForms-lx1\obj\Debug\WindowsForms-lx1.pdb

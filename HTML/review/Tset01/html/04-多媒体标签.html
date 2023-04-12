@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多媒体标签</title>
+</head>
+<body>
+
+    <!--
+    src(必须属性) 音频URL 支持格式：MP3、Ogg、Wav
+    controls  显示音频控制面板
+    loop  循环播放
+    autoplay  自动播放  为了提升用户体验，浏览器一般会禁用自动播放功能
+    -->
+
+    <audio src="../music/CORSAK胡梦周&马吟吟-溯(Reverse).flac"></audio>
+    <!-- 如果属性名和属性值完全一样，可以简写未一个单词   -->
+    <audio src="../music/鸡.mp3" controls></audio> <!-- controls 显示音频控制面板 -->
+    <audio src="../music/鸡.mp3" controls loop></audio> <!-- loop 循环播放 -->
+    <audio src="../music/鸡.mp3" controls loop autoplay></audio> <!-- autoplay 自动播放 -->
+
+    <!--
+    src(必须属性)   视频URL   支持格式：MP4、WebM、Ogg
+    controls    显示视频控制面板
+    loop    循环播放
+    muted   静音播放
+    autoplay    自动播放    为了提升用户体验，览器支持静音状态自动播
+    -->
+    <br>
+
+    <video src="../video/2022-10-25%2001-01-14.mp4" controls height="200px" width="300px"></video>
+    <video src="../video/2022-10-25%2001-01-14.mp4" controls loop height="200px" width="300px"></video>
+    <video src="../video/2022-10-25%2001-01-14.mp4" controls muted height="200px" width="300px"></video>
+    <video src="../video/2022-10-25%2001-01-14.mp4" muted autoplay height="200px" width="300px"></video>
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+* {
+
+    margin: auto;
+    background-color: black;
+
+}
+
+/*div*/
+#img-d {
+
+    width: 400px;
+    height: 750px;
+
+    /*居中*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:  0;
+    left: 0;
+    margin: auto;
+
+    /*边框样式*/
+    border-style: outset;
+    border-width: 5px;
+
+}
+
+/*图片*/
+.img1 {
+
+    width: 400px;
+    height: 750px;
+    
+    /*动画*/
+    filter:hue-rotate(10deg) ;
+    transition: 50s linear;
+}
+
+/*按钮*/
+#div {
+ 
+    background-color: white;
+
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    margin: auto;
+
+    z-index: 999;
+}
+
+
+/*变换后*/
+*:hover .img1{
+     /*高斯模糊*/
+    
+    filter:blur(50px); 
+    
+
+    /*色相翻转*/
+    
+    filter:hue-rotate(5000deg) ;
+    
+    transition: 50s linear;
+
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    function test() {
+        if (document.referrer === ""){
+            document.write("<h1>正在返回主页</h1>")
+            setTimeout(function () {window.open("test01.html")},2000)
+        }else {
+            document.write("<h1>test02</h1>")
+        }
+    }
+
+    test();
+</script>
+
+</body>
+</html>

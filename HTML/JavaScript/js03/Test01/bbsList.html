@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课工场论坛列表</title>
+    <link href="css/bbs.css" rel="stylesheet">
+</head>
+<body >
+<div class="bbs" id="bbs">
+    <header onmouseover="enter()" ><span>我要发帖</span></header>
+    <section>
+        <ul></ul>
+    </section>
+    <div class="post" id="post" >
+        <input class="title" placeholder="请输入标题（1-50个字符）">
+        所属版块：<select>
+        <option>请选择版块</option>
+        <option>电子书籍</option>
+        <option>新课来了</option>
+        <option>新手报到</option>
+        <option>职业规划</option>
+        </select>
+        <textarea class="content"></textarea>
+        <input class="btn" value="发布" onclick="btnClick(); out();">
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    //获取到post
+    var post = document.getElementById("post");
+    //获取到bbs
+    var bbs = document.getElementById("bbs");
+
+    function enter() {
+        post.style.display="block";
+    }
+
+    function out() {
+        post.style.display="none";
+        // 标题值
+        post.firstElementChild.value="";
+        //所属板块值
+        post.firstElementChild.nextElementSibling.value=post.firstElementChild.nextElementSibling.firstElementChild.value;
+        post.firstElementChild.nextElementSibling.nextElementSibling.value = "";
+
+
+    }
+
+    function btnClick(){
+        post = document.getElementById("post");
+        // 标题值
+        var postTextsValue = post.firstElementChild.value;
+        //所属板块值
+        var postOptionValue = post.firstElementChild.nextElementSibling.value
+        //描述框内的值
+        var postTextareaValue = post.firstElementChild.nextElementSibling.nextElementSibling.value
+        //选中ul
+        var ul = bbs.firstElementChild.nextElementSibling.firstElementChild;
+        var li1 = document.createElement("li");
+
+        ul.appendChild(li1);
+
+        //选中li
+        var li01 = ul.firstElementChild;
+        //创建div
+        var div1 = document.createElement("div");
+        //设置div样式
+        div1.className = "div";
+
+        //将div放入li
+        li1.appendChild(div1)
+        //选中div
+        var div01 = li01.firstElementChild;
+        //创建img
+        var img1 = document.createElement("img")
+        //将img放入div
+        div1.appendChild(img1)
+
+        //创建随机数
+        var randomImg = ["images/tou01.jpg","images/tou02.jpg","images/tou03.jpg","images/tou04.jpg"];
+        var randomNumber = Math.floor(Math.random() * 4);
+        //设置img路径
+        img1.src = randomImg[randomNumber];
+        img1.alt = randomImg[randomNumber];
+
+        //创建h2标签
+        var h2_1 = document.createElement("h2");
+        //更改h2的样式
+        h2_1.className = "h2_1";
+
+        //将h2放入div
+        div1.appendChild(h2_1);
+        h2_1.textContent = postTextsValue;
+
+        //创建h4标签
+        var h4_1 = document.createElement("h4");
+        //更改h2的样式
+        h4_1.className = "h4_1";
+
+        //将h2放入div
+        div1.appendChild(h4_1);
+        h4_1.textContent = "所属板块："+postOptionValue;
+
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDay();
+        var hour = date.getHours();
+        var minute = date.getMinutes();
+        var second = date.getSeconds();
+
+        //创建h2标签
+        var h4_2 = document.createElement("h4");
+        //更改h2的样式
+        h4_2.className = "time";
+
+        //将放入div
+        div1.appendChild(h4_2);
+        h4_2.textContent = year+"年"+month+"月"+day+"日"+" "+hour+":"+minute+":"+second;
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\bin\Debug\WinForm-KaoShi.exe.config
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\bin\Debug\WinForm-KaoShi.exe
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\bin\Debug\WinForm-KaoShi.pdb
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\obj\Debug\WinForm-KaoShi.csproj.AssemblyReference.cache
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\obj\Debug\WinForm-KaoShi.csproj.SuggestedBindingRedirects.cache
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\obj\Debug\WinForm_KaoShi.frmMain.resources
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\obj\Debug\WinForm_KaoShi.Properties.Resources.resources
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\obj\Debug\WinForm-KaoShi.csproj.GenerateResource.cache
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\obj\Debug\WinForm-KaoShi.csproj.CoreCompileInputs.cache
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\obj\Debug\WinForm-KaoShi.exe
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\obj\Debug\WinForm-KaoShi.pdb
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\obj\Debug\WinForm_KaoShi.Frm_LuRu.resources
+F:\ZhanDian\VS\WinForm-KaoShi\WinForm-KaoShi\obj\Debug\WinForm_KaoShi.Frm_ChaXun.resources

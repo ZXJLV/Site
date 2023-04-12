@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="button" value="计算两数运算结果" onclick="jiSuan()">
+<input type="button" value="计算两数运算结果2" onclick="jiSuan2(prompt('请输入第一个数：'),prompt('请输入第二个数：'),prompt('请输入运算符号：'))">
+
+<script type="text/javascript">
+
+  var one = null
+  var two = null;
+  var fh = null;
+
+  function jiSuan() {
+    one = prompt("请输入第一个数：");
+    two = prompt("请输入第二个数：");
+    fh = prompt("请输入运算符号：");
+
+    one = parseInt(one)
+    two = parseInt(two)
+
+    var value = 0;
+
+    switch (fh) {
+      case "+":
+        value=one+two;
+        break;
+      case "-":
+        value=one-two;
+        break;
+      case "*":
+        value=one*two;
+        break;
+      case "/":
+        value=one/two;
+        break;
+    }
+    alert("两数运算结果为："+one+fh+two+"="+value);
+  }
+
+  function jiSuan2(one,two,fh) {
+    one = parseInt(one)
+    two = parseInt(two)
+
+    var value = 0;
+
+    switch (fh) {
+      case "+":
+        value=one+two;
+        break;
+      case "-":
+        value=one-two;
+        break;
+      case "*":
+        value=one*two;
+        break;
+      case "/":
+        value=one/two;
+        break;
+    }
+    alert("两数运算结果为："+one+fh+two+"="+value);
+  }
+  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <h2 id="time" ></h2>
+
+<script type="text/javascript">
+  function huoQuTime() {
+
+    var date = new Date();
+    var nian = date.getFullYear();
+    var yue = date.getMonth();
+    var ri = date.getDate();
+
+    var shi = date.getHours();
+    var fen = date.getMinutes();
+    var miao = date.getSeconds();
+
+    var sxw = "";
+
+    if (shi >= 12) {
+      sxw = "AM"
+    }else {
+      sxw = "PM"
+    }
+
+    var xq = date.getDay()
+    var xq2 = "";
+    switch (xq){
+      case 1:
+        xq2 = "星期一"
+        break
+      case 2:
+        xq2 = "星期二"
+        break
+      case 3:
+        xq2 = "星期三"
+        break
+      case 4:
+        xq2 = "星期四"
+        break
+      case 5:
+        xq2 = "星期五"
+        break
+      case 6:
+        xq2 = "星期六"
+        break
+      case 7:
+        xq2 = "星期日"
+        break
+    }
+
+
+    document.getElementById("time").innerHTML=
+            nian + "年" + (yue+1) + "月" + ri + "日" + "&nbsp;&nbsp;&nbsp;" +
+            shi + ":" + fen + ":" + miao + "&nbsp;&nbsp;&nbsp;" + sxw + "&nbsp;&nbsp;&nbsp;" + xq2
+
+  }
+  setInterval('huoQuTime()',1000)
+  huoQuTime();
+</script>
+
+</body>
+</html>
