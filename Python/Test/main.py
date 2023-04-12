@@ -64,4 +64,54 @@ print(name)
 print(Name)
 
 
+# 算术运算符
+print("2+1=", 2 + 1)
+print("4-2=", 4 - 2)
+print("2*1=", 2 * 1)
+print("10/2=", 10 / 5)
+print("10//3=", 10 // 3)
+print("10%3=", 10 % 3)
+print("10**3=", 10 ** 3)
+
+
+# 赋值运算符
+num = 1+2+3
+print(num)
+
+# 符合赋值运算符
+# +=
+num += 1
+print(num)
+# -=
+num -= 1
+print(num)
+# *=
+num *= 2
+print(num)
+# /=
+num /= 2
+print(num)
+# %=
+num = 5
+num %= 2
+print(num)
+# **=
+num = 5
+num **= 2
+print(num)
+# //=
+num = 5
+num //= 4
+print(num)
+
+
+name = "\"张三\""
+print(name)
+
+
+
+
+
+
+
 
