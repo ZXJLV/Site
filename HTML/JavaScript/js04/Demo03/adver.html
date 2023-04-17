@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>广告图片轮播切换</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.6.4.js"></script>
+</head>
+<body>
+<div class="adver">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <div class="arrowLeft"><</div><div class="arrowRight">></div>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+    let imgNumber = 0;
+    let img = Array("adver01.jpg","adver02.jpg","adver03.jpg","adver04.jpg","adver05.jpg","adver06.jpg");
+
+    $(document).ready(function () {
+        $(".adver").mouseover(function () {
+            $(".arrowLeft").show();
+            $(".arrowRight").show();
+        }).mouseout(function () {
+            $(".arrowLeft").hide();
+            $(".arrowRight").hide();
+        })
+
+        $(".arrowLeft").click(function () {
+            if (imgNumber===0){
+                imgNumber=6;
+            }
+            imgNumber--;
+            $(".adver").css("background","url(images/"+img[imgNumber]+")")
+                 .css({
+                backgroundImage: "url(images/" + img[imgNumber] + ")",
+                transition: "background-image 0.5s ease-out"
+            });
+
+            if (!imgNumber+1){
+                $("li").css("background","#333333");
+            }
+            $("li:nth-of-type("+(imgNumber+1)+")").css("background","orange");
+
+        })
+
+        $(".arrowRight").click(function () {
+            if (imgNumber===5){
+                imgNumber=-1;
+            }
+            imgNumber++;
+            $(".adver").css("background","url(images/"+img[imgNumber]+")")
+
+            if (!imgNumber+1){
+                $("li").css("background","#333333");
+            }
+            $("li:nth-of-type("+(imgNumber+1)+")").css("background","orange");
+
+        })
+
+    })
+
+</script>
+

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    position: relative;
+    top: -210px;
+    left: 150px;
+}
+
+h3 {
+    position: relative;
+    top: -200px;
+    left: 150px;
+
+    line-height: 30px;
+}
+
+a {
+    position: relative;
+    top: -200px;
+    left: 150px;
+
+}
+
+div {
+    width: 1850px;
+    height: 100px;
+    background: #666666;
+
+    position: relative;
+    top: -200px;
+    left: -150px;
+
+    display: none;
+
+}
+
+div h1 {
+    color: white;
+
+    position: relative;
+    top: 25px;
+    left: 190px;
+}
+
+p {
+    position: relative;
+    top: -180px;
+    line-height: 30px;
+
+    display: none;
+
+}
