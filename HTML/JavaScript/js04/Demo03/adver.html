@@ -40,10 +40,7 @@
             }
             imgNumber--;
             $(".adver").css("background","url(images/"+img[imgNumber]+")")
-                 .css({
-                backgroundImage: "url(images/" + img[imgNumber] + ")",
-                transition: "background-image 0.5s ease-out"
-            });
+                 .css({"backgroundImage": "url(images/" + img[imgNumber] + ")", "transition": "background-image 0.5s ease-out"});
 
             if (!imgNumber+1){
                 $("li").css("background","#333333");

@@ -5,13 +5,13 @@
     <title>课工场论坛列表</title>
     <link href="css/bbs.css" rel="stylesheet">
 </head>
-<body >
+<body>
 <div class="bbs" id="bbs">
-    <header onmouseover="enter()" ><span>我要发帖</span></header>
+    <header onclick="enter()"><span>我要发帖</span></header>
     <section>
         <ul></ul>
     </section>
-    <div class="post" id="post" >
+    <div class="post" id="post">
         <input class="title" placeholder="请输入标题（1-50个字符）">
         所属版块：<select>
         <option>请选择版块</option>
@@ -19,7 +19,7 @@
         <option>新课来了</option>
         <option>新手报到</option>
         <option>职业规划</option>
-        </select>
+    </select>
         <textarea class="content"></textarea>
         <input class="btn" value="发布" onclick="btnClick(); out();">
     </div>
@@ -32,22 +32,22 @@
     //获取到bbs
     var bbs = document.getElementById("bbs");
 
+    //点击显示
     function enter() {
-        post.style.display="block";
+        post.style.display = "block";
     }
 
+    //点击后
     function out() {
-        post.style.display="none";
+        post.style.display = "none";
         // 标题值
-        post.firstElementChild.value="";
+        post.firstElementChild.value = "";
         //所属板块值
-        post.firstElementChild.nextElementSibling.value=post.firstElementChild.nextElementSibling.firstElementChild.value;
+        post.firstElementChild.nextElementSibling.value = post.firstElementChild.nextElementSibling.firstElementChild.value;
         post.firstElementChild.nextElementSibling.nextElementSibling.value = "";
-
-
     }
 
-    function btnClick(){
+    function btnClick() {
         post = document.getElementById("post");
         // 标题值
         var postTextsValue = post.firstElementChild.value;
@@ -78,7 +78,7 @@
         div1.appendChild(img1)
 
         //创建随机数
-        var randomImg = ["images/tou01.jpg","images/tou02.jpg","images/tou03.jpg","images/tou04.jpg"];
+        var randomImg = ["images/tou01.jpg", "images/tou02.jpg", "images/tou03.jpg", "images/tou04.jpg"];
         var randomNumber = Math.floor(Math.random() * 4);
         //设置img路径
         img1.src = randomImg[randomNumber];
@@ -100,7 +100,7 @@
 
         //将h2放入div
         div1.appendChild(h4_1);
-        h4_1.textContent = "所属板块："+postOptionValue;
+        h4_1.textContent = "所属板块：" + postOptionValue;
 
         var date = new Date();
         var year = date.getFullYear();
@@ -117,7 +117,7 @@
 
         //将放入div
         div1.appendChild(h4_2);
-        h4_2.textContent = year+"年"+month+"月"+day+"日"+" "+hour+":"+minute+":"+second;
+        h4_2.textContent = year + "年" + month + "月" + day + "日" + " " + hour + ":" + minute + ":" + second;
     }
 
 </script>
