@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+<script type="text/javascript" src="js/jquery-3.6.4.js"></script>
+</head>
+<body>
+
+    <input type="password" >
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $("input").keydown(function () {
+            $("h4").append("keydown\t")
+        }).keypress(function () {
+            $("h4").append("keypress\t")
+        }).keyup(function () {
+            $("h4").append("keyup\t").css("color", "red")
+        })
+
+        $(document).keydown(function (even) {
+            if (even.keyCode === 13){
+                alert("123")
+            }
+        })
+
+
+
+    })
+
+
+
+</script>

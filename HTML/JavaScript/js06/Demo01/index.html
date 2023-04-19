@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>京东首页右侧固定层</title>
+    <link href="css/nav.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.6.4.js"></script>
+</head>
+<body>
+<nav id="nav">
+    <li><span></span><p>就东会员</p></li>
+    <li><span></span><p>购物车</p></li>
+    <li><span></span><p>我的关注</p></li>
+    <li><span></span><p>我的足迹</p></li>
+    <li><span></span><p>我的消息</p></li>
+    <li><span></span><p>咨询JIMI</p></li>
+</nav>
+</body>
+</html>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#nav li span").mouseover(function () {
+            $(this).next().show(1000,"swing",a)
+        }).mouseout(function () {
+            $(this).next().hide()
+
+        })
+
+        function a (){
+            alert("123")
+        }
+
+    })
+
+
+</script>
