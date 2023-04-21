@@ -96,7 +96,7 @@ password=root
     }
 
     //简便增,删,改
-    public static int updateBuffer(String sql,Object[] objects) throws SQLException, ClassNotFoundException {
+    public static int updateBuffer(String sql,Object[] objects) throws Exception{
         Connection conn = getConn();
         PreparedStatement ps = conn.prepareStatement(sql);
         if(objects != null){
@@ -110,5 +110,12 @@ password=root
         System.err.println("sql: " + ps);
         return row;
     }
+
+
+
+
+
+
+
 
 }

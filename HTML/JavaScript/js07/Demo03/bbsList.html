@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>课工场论坛列表</title>
+    <link href="css/bbs.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.12.4.js" id="a"></script>
+</head>
+<body>
+<div class="bbs">
+    <header><span>我要发帖</span></header>
+    <section>
+        <ul></ul>
+    </section>
+    <div class="post">
+        <input class="title" placeholder="请输入标题（1-50个字符">
+        所属版块：<select>
+        <option>请选择版块</option>
+        <option>电子书籍</option>
+        <option>新课来了</option>
+        <option>新手报到</option>
+        <option>职业规划</option>
+    </select>
+        <textarea class="content"></textarea>
+        <input class="btn" value="发布">
+    </div>
+</div>
+
+<script type="text/javascript" id="b">
+    $(document).ready(function () {
+
+        $(".bbs header span").click(function () {
+            $(".post").toggle(1000)
+        })
+
+        $(".btn").click(function () {
+            let ul = $("section ul").html()
+
+            let titleVal = "<h2>标题：" + $(".post input:first").val() + "</h2>";
+            let selectVal = "<h3>所属板块：" + $(".post select").val() + "</h3>";
+
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var day = date.getDay();
+            var hour = date.getHours();
+            var minute = date.getMinutes();
+            var second = date.getSeconds();
+
+            let time = "<h4>" + year + "年" + month + "月" + day + "日" + " " + hour + ":" + minute + ":" + second + "</h4>";
+
+            let random = Math.floor(Math.random() * 4);
+
+            let imgS = Array("tou01.jpg", "tou02.jpg", "tou03.jpg", "tou04.jpg")
+
+            let img = "<img src='images/" + imgS[random] + "'>"
+
+            let addInsert = img + titleVal + selectVal + time
+            $("section ul").html(ul + addInsert)
+            $(".post").hide(1000)
+
+            $(".post input:first").val("")
+            $(".post select").val("")
+            $(".post textarea").val("")
+        })
+
+    })
+
+
+</script>
+
+</body>
+</html>
+
