@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+
+  <div id="app">
+    <input type="text" v-model="age">
+    <span v-if=" age<=18 ">小于18</span>
+    <span v-else-if=" age>18 && age<=60">大于30小于60</span>
+    <span v-else>大于60</span>
+
+    <br><br>
+
+    <input type="text" v-model="age">
+    <span v-show="age<=18">小于18</span>
+    <span v-show="age>18 && age<=60">大于30小于60</span>
+    <span v-show="age>60">大于60</span>
+
+
+
+
+  </div>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+  new Vue({
+      el:"#app",
+      data:{
+        age:"20"
+      }
+
+  })
+
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+
+<div id="test" >
+  <div v-for="name in names">{{name}}</div>
+  <br>
+  <br>
+  <div v-for="(name,index) in names">{{index}}:{{name}}</div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+
+  new Vue({
+      el:"#test",
+      data:{
+        names:['杨一鸣','杨二铭','杨三名','杨四明','杨五名','杨六名']
+      }
+  })
+
+</script>

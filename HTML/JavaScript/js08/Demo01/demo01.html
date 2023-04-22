@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script type="text/javascript" src="js/jquery-3.6.4.js"></script>
+</head>
+<body>
+
+  <form action="success.html">
+    请输入邮箱：<input type="text" placeholder="请输入邮箱" name="email" id="email"> <span></span> <br>
+    请输入密码：<input type="password" name="pwd" id="pwd1"><span></span> <br>
+    请再次输入密码：<input type="password" id="pwd2"><span></span> <br>
+    请选择您的性别：<select name="gender"><option>自定义</option><option>男</option><option>女</option></select> <br>
+    <input type="submit" value="提交" id="submit">
+  </form>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+  $(document).ready(function () {
+      $("form #email").blur(email)
+      $("form #pwd1").blur(pwd)
+      $("form #pwd2").blur(pwd2)
+
+      $("form").submit(function (){
+          if (!email()){
+              return false;
+          }
+          if (!pwd()){
+              return false;
+          }
+          if (!pwd2()){
+              return false;
+          }
+
+          return true;
+      })
+
+
+  })
+
+  function email(){
+      let emailVal = $("form :text").val()
+      if (emailVal===""){
+        $(this).next().html("<span style='color: #80100e'>邮箱不能为空！</span>")
+          return false;
+      }else {
+          $(this).next().html("<span style='color: #80100e'></span>")
+      }
+      if (emailVal.indexOf("@") === -1){
+          $(this).next().html("<span style='color: #80100e'>邮箱格式错误</span>")
+          return false;
+      }else {
+          $(this).next().html("<span style='color: #80100e'></span>")
+      }
+      if (emailVal.indexOf(".com") === -1){
+          $(this).next().html("<span style='color: #80100e'>邮箱格式错误</span>")
+          return false;
+      }else {
+          $(this).next().html("<span style='color: #80100e'></span>")
+      }
+    return true;
+  }
+
+  function pwd() {
+      let pwdVal = $("#pwd1").val()
+      if (pwdVal===""){
+          $(this).next().html("<span style='color: #80100e'>密码不能为空！</span>")
+          return false;
+      }else {
+          $(this).next().html("<span style='color: #80100e'></span>")
+      }
+      if (pwdVal.length < 6 || pwdVal.length > 11){
+          $(this).next().html("<span style='color: #80100e'>密码长度必须大于6小于11</span>")
+          return false;
+      }else {
+          $(this).next().html("<span style='color: #80100e'></span>")
+      }
+    return true;
+  }
+
+  function pwd2() {
+      let pwdVal = $("#pwd1").val()
+      let pwdVal2 = $("#pwd2").val()
+      if (pwdVal2===""){
+          $(this).next().html("<span style='color: #80100e'>密码不能为空！</span>")
+          return false;
+      }else {
+          $(this).next().html("<span style='color: #80100e'></span>")
+      }
+      if (pwdVal2!==pwdVal){
+          $(this).next().html("<span style='color: #80100e'>两次密码必须一致！</span>")
+          return false;
+      }else {
+          $(this).next().html("<span style='color: #80100e'></span>")
+      }
+      return true;
+  }
+
+
+
+
+
+</script>
+
