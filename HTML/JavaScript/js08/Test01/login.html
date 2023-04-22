@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+</head>
+<body>
+    
+<form action="success.html" method="get">
+    电子邮箱：<input type="text">
+    <input type="submit" value="提交">
+    <div class="div">
+
+    </div>
+</form>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("form").submit(function (){
+            var emailVal = $("input:text").val();
+            if (emailVal === "") {
+                $(".div").html("<h1 style='color: red'>邮箱不能为空</h1>");
+                return false;
+             }   
+             if (emailVal.indexOf("@") === -1) {
+                $(".div").html("<h1 style='color: red'>邮箱不能没有@</h1>");
+                return false;
+             }   
+             return true;
+        })
+    })
+
+
+
+</script>
