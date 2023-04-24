@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="js/axios-0.18.0.js" type="text/javascript"></script>
+</head>
+<body>
+
+<input type="button" value="get" onclick="get()">
+<input type="button" value="post" onclick="get()">
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+  function get(){
+    axios.get("http://yapi.smart-xwork.cn/mock/169327/emp/list").then(result=>{
+      console.log(result.data);
+    })
+  }
+
+  function post(){
+    axios.post("http://yapi.smart-xwork.cn/mock/169327/emp/deletByld","id=1").then(resu=>{
+      console.log(result.data)
+    })
+  }
+
+</script>
