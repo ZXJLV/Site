@@ -79,59 +79,59 @@
 <script>
 
 	$(document).ready(function (){
-		$(".btn").click(function (){
-
-			let userVal = $("#user").val();
-			let pwdVal = $("#pwd").val();
-			let mobileVal = $("#mobile").val();
-			let birthVal = $("#birth").val();
-
-			let regUser = /^(\w{4,16}$)/;
-			if (regUser.test(userVal)===false){
-				alert("用户名格式错误")
-				return false
-			}
-
-			let regPwd = /^(\w{4,10}$)/;
-			if (regPwd.test(pwdVal)===false){
-				alert("密码格式错误")
-				return false
-			}
-
-			let regMobile = /^(1\d{10}$)/;
-			if (regMobile.test(mobileVal)===false){
-				alert("手机号格式错误")
-				return false
-			}
-
-			if (birthVal<1900||birthVal>2016){
-				alert("生日格式错误")
-				return false
-			}
-
-			return true
-
-		})
-
 		// $(".btn").click(function (){
-		// 	let user = document.getElementById("user");
-		// 	if (user.validity.valueMissing===true){
-		// 		user.setCustomValidity("用户名不能为空")
-		// 	}else if (user.validity.patternMismatch===true){
-		// 		user.setCustomValidity("用户名必须是6~14位")
-		// 	}else {
-		// 		user.setCustomValidity("")
+		//
+		// 	let userVal = $("#user").val();
+		// 	let pwdVal = $("#pwd").val();
+		// 	let mobileVal = $("#mobile").val();
+		// 	let birthVal = $("#birth").val();
+		//
+		// 	let regUser = /^(\w{4,16}$)/;
+		// 	if (regUser.test(userVal)===false){
+		// 		alert("用户名格式错误")
+		// 		return false
 		// 	}
 		//
-		// 	let pwd = document.getElementById("pwd");
-		// 	if (pwd.validity.valueMissing===true){
-		// 		pwd.setCustomValidity("密码不能为空")
-		// 	}else if (pwd.validity.patternMismatch===true){
-		// 		pwd.setCustomValidity("密码必须是6~10位")
-		// 	}else {
-		// 		pwd.setCustomValidity("")
+		// 	let regPwd = /^(\w{4,10}$)/;
+		// 	if (regPwd.test(pwdVal)===false){
+		// 		alert("密码格式错误")
+		// 		return false
 		// 	}
+		//
+		// 	let regMobile = /^(1\d{10}$)/;
+		// 	if (regMobile.test(mobileVal)===false){
+		// 		alert("手机号格式错误")
+		// 		return false
+		// 	}
+		//
+		// 	if (birthVal<1900||birthVal>2016){
+		// 		alert("生日格式错误")
+		// 		return false
+		// 	}
+		//
+		// 	return true
+		//
 		// })
+
+		$(".btn").click(function (){
+			let user = document.getElementById("user");
+			if (user.validity.valueMissing===true){
+				user.setCustomValidity("用户名不能为空")
+			}else if (user.validity.patternMismatch===true){
+				user.setCustomValidity("用户名必须是6~14位")
+			}else {
+				user.setCustomValidity("")
+			}
+
+			let pwd = document.getElementById("pwd");
+			if (pwd.validity.valueMissing===true){
+				pwd.setCustomValidity("密码不能为空")
+			}else if (pwd.validity.patternMismatch===true){
+				pwd.setCustomValidity("密码必须是6~10位")
+			}else {
+				pwd.setCustomValidity("")
+			}
+		})
 
 
 
